@@ -13,9 +13,10 @@ padding: 20px;
 text-align: center;
 background: rgba(0,0,0,0.5);
 backdrop-filter: blur(10px);
+z-index: 1000;
 }
 
-/* PANELS (FULL SCREEN SECTIONS) */
+/* PANELS */
 .panel {
 height: 100vh;
 display: flex;
@@ -26,14 +27,16 @@ padding: 50px;
 
 /* HERO */
 .hero {
-background: url("https://picsum.photos/id/1018/1600/900") center/cover;
+background: url("https://picsum.photos/1600/900") center/cover;
 font-size: 2rem;
+text-align: center;
 }
 
 /* IMAGE SECTIONS */
 .image-section {
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 
 .image-section .text {
@@ -52,8 +55,9 @@ flex-direction: row-reverse;
 
 /* FULL IMAGE */
 .full-image {
-background: url("https://picsum.photos/id/1043/1600/900") center/cover;
+background: url("https://picsum.photos/1600/901") center/cover;
 font-size: 2rem;
+text-align: center;
 }
 
 /* CONTACT */
@@ -70,11 +74,13 @@ width: 300px;
 input, textarea {
 margin: 10px 0;
 padding: 10px;
+border-radius: 5px;
+border: none;
 }
 
 /* BUTTON */
 button {
-background: gold;
+background: linear-gradient(45deg, #d4af37, #f5e6a3);
 border: none;
 padding: 10px;
 cursor: pointer;
