@@ -8,7 +8,7 @@ message: e.target[2].value
 };
 
 try {
-await fetch("http://localhost:5000/contact", {
+const res = await fetch("http://127.0.0.1:5000/contact", {
 method: "POST",
 headers: {
 "Content-Type": "application/json"
@@ -17,7 +17,11 @@ body: JSON.stringify(data)
 });
 
 ```
-alert("Message sent!");
+if (res.ok) {
+  alert("Message sent successfully!");
+} else {
+  alert("Something went wrong");
+}
 ```
 
 } catch (err) {
