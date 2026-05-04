@@ -1,0 +1,81 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: #0b0b0b;
+color: white;
+}
+
+/* HEADER */
+header {
+position: fixed;
+width: 100%;
+padding: 20px;
+text-align: center;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(10px);
+}
+
+/* PANELS (FULL SCREEN SECTIONS) */
+.panel {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px;
+}
+
+/* HERO */
+.hero {
+background: url("https://picsum.photos/id/1018/1600/900") center/cover;
+font-size: 2rem;
+}
+
+/* IMAGE SECTIONS */
+.image-section {
+display: flex;
+justify-content: space-between;
+}
+
+.image-section .text {
+width: 40%;
+}
+
+.image-section .image img {
+width: 400px;
+border-radius: 10px;
+}
+
+/* REVERSE */
+.reverse {
+flex-direction: row-reverse;
+}
+
+/* FULL IMAGE */
+.full-image {
+background: url("https://picsum.photos/id/1043/1600/900") center/cover;
+font-size: 2rem;
+}
+
+/* CONTACT */
+.contact {
+flex-direction: column;
+}
+
+form {
+display: flex;
+flex-direction: column;
+width: 300px;
+}
+
+input, textarea {
+margin: 10px 0;
+padding: 10px;
+}
+
+/* BUTTON */
+button {
+background: gold;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
