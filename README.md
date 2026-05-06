@@ -1,4 +1,4 @@
-# 🍽️ Veloura – Restaurant Website
+# 🚀 FUTURE_FS_03 – 🍽️ Veloura - Restaurant Website
 
 ## 📌 Task 3 – Full Stack Web Development Internship
 
@@ -55,13 +55,13 @@ This solution enhances customer engagement and demonstrates how restaurants can 
 
 ## 🌐 Live Website
 
-👉 https://yourusername.github.io/FUTURE_FS_03/
+👉 https://krithip06.github.io/FUTURE_FS_03/
 
 ---
 
 ## 📂 GitHub Repository
 
-👉 https://github.com/yourusername/FUTURE_FS_03
+👉 https://github.com/KrithiP06/FUTURE_FS_03
 
 ---
 
