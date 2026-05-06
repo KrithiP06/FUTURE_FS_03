@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloura | Fine Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo-container">
+            <img src="images/Logo.jpg" alt="Veloura Logo" class="logo">
+            <h1>Veloura</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="cart.html">Cart</a>
+            <a href="#contact">Contact</a>
+            <button onclick="toggleDarkMode()">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Where Flavor Meets Elegance</h2>
+        <p>Experience luxury dining in the heart of Udupi</p>
+        <button onclick="scrollToMenu()">Explore Menu</button>
+    </section>
+
+    <!-- Menu Section -->
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+
+    <!-- Appetizers -->
+<div class="menu-category">
+    <h3>🥂 Appetizers</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/TruffleMushroomSoup.jpg" alt="Truffle Mushroom Soup">
+            <h4>Truffle Mushroom Soup</h4>
+            <p>₹320</p> 
+            <button onclick="addToCart('Truffle Mushroom Soup', 320)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/CrispyPannerBites.jpg" alt="Crispy Paneer Bites">
+            <h4>Crispy Paneer Bites</h4>
+            <p>₹280</p>
+            <button onclick="addToCart('Crispy Paneer Bites', 280)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/GarlicButterShrimp.jpg" alt="Garlic Butter Prawns">
+            <h4>Garlic Butter Prawns</h4>
+            <p>₹420</p>
+            <button onclick="addToCart('Garlic Butter Prawns', 420)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/BruschettaTrio.jpg" alt="Bruschetta Trio">
+            <h4>Bruschetta Trio</h4>
+            <p>₹260</p>
+            <button onclick="addToCart('Bruschetta Trio', 260)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/StuffedMushroomCaps.jpg" alt="Stuffed Mushroom Caps">
+            <h4>Stuffed Mushroom Caps</h4>
+            <p>₹300</p>
+            <button onclick="addToCart('Stuffed Mushroom Caps', 300)">Add to Cart</button>
+        </div>
+
+      </div>
+</div>
+
+    <!-- Salads -->
+<div class="menu-category">
+    <h3>🥗 Salads</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/CeasarSalad.jpg" alt="Caesar Salad">
+            <h4>Caesar Salad (Veg / Chicken)</h4>
+            <p>₹250</p>
+            <button onclick="addToCart('Caesar Salad', 250)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/QuinoaSalad.jpg" alt="Quinoa Salad">
+            <h4>Mediterranean Quinoa Salad</h4>
+            <p>₹320</p>
+            <button onclick="addToCart('Mediterranean Quinoa Salad', 320)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/AvocadoCitrusSalad.jpg" alt="Avocado Salad">
+            <h4>Avocado & Citrus Salad</h4>
+            <p>₹300</p>
+            <button onclick="addToCart('Avocado & Citrus Salad', 300)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Pasta & Continental -->
+<div class="menu-category">
+    <h3>🍝 Pasta & Continental</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/vegAlfredoPasta.jpg" alt="Veg Alfredo Pasta">
+            <h4>Veg Alfredo Pasta</h4>
+            <p>₹350</p>
+            <button onclick="addToCart('Veg Alfredo Pasta', 350)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ChickenAlfredoPasta.jpg" alt="Chicken Alfredo Pasta">
+            <h4>Chicken Alfredo Pasta</h4>
+            <p>₹450</p>
+            <button onclick="addToCart('Chicken Alfredo Pasta', 450)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/SpaghettiAglioEOlio.jpg" alt="Aglio e Olio">
+            <h4>Spaghetti Aglio e Olio</h4>
+            <p>₹380</p>
+            <button onclick="addToCart('Spaghetti Aglio e Olio', 380)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/CreamyMushroomRisotto.jpg" alt="Mushroom Risotto">
+            <h4>Creamy Mushroom Risotto</h4>
+            <p>₹400</p>
+            <button onclick="addToCart('Creamy Mushroom Risotto', 400)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/GrilledChickenSteakHerbSauce.jpg" alt="Grilled Chicken Steak">
+            <h4>Grilled Chicken Steak with Herb Sauce</h4>
+            <p>₹500</p>
+            <button onclick="addToCart('Grilled Chicken Steak with Herb Sauce', 500)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Indian Main Course -->
+<div class="menu-category">
+    <h3>🍛 Indian Main Course</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/PaneerTikkaMasala.jpg" alt="Paneer Tikka Masala">
+            <h4>Paneer Tikka Masala</h4>
+            <p>₹350</p>
+            <button onclick="addToCart('Paneer Tikka Masala', 350)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/DalMakhani.jpg" alt="Dal Makhani">
+            <h4>Dal Makhani</h4>
+            <p>₹280</p>
+            <button onclick="addToCart('Dal Makhani', 280)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ButterChicken.jpg" alt="Butter Chicken">
+            <h4>Butter Chicken</h4>
+            <p>₹320</p>
+            <button onclick="addToCart('Butter Chicken', 320)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/VegBiryani.jpg" alt="Veg Biryani">
+            <h4>Veg Biryani</h4>
+            <p>₹300</p>
+            <button onclick="addToCart('Veg Biryani', 300)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ChickenDumBiryani.jpg" alt="Chicken Dum Biryani">
+            <h4>Chicken Dum Biryani</h4>
+            <p>₹350</p>
+            <button onclick="addToCart('Chicken Dum Biryani', 350)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Signature Specials -->
+<div class="menu-category">
+    <h3>🦞 Signature Specials</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/ButterGarlicLobster.jpg" alt="Butter Garlic Lobster">
+            <h4>Butter Garlic Lobster</h4>
+            <p>₹850</p>
+            <button onclick="addToCart('Butter Garlic Lobster', 850)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/HerbCrustedSalmon.jpg" alt="Herb Crusted Salmon">
+            <h4>Herb Crusted Salmon</h4>
+            <p>₹780</p>
+            <button onclick="addToCart('Herb Crusted Salmon', 780)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/LambChops.jpg" alt="Lamb Chops">
+            <h4>Lamb Chops with Red Wine Sauce</h4>
+            <p>₹600</p>
+            <button onclick="addToCart('Lamb Chops with Red Wine Sauce', 600)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ChefsSpecialPlatter.jpg" alt="Chef Special Platter">
+            <h4>Chef’s Special Platter</h4>
+            <p>₹1,200</p>
+            <button onclick="addToCart('Chef’s Special Platter', 1200)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>     
+
+    <!-- Breads & Sides -->
+<div class="menu-category">
+    <h3>🍞 Breads & Sides</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/ButterNaan.jpg" alt="Butter Naan">
+            <h4>Butter Naan</h4>
+            <p>₹50</p>
+            <button onclick="addToCart('Butter Naan', 50)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/GarlicNaan.jpg" alt="Garlic Naan">
+            <h4>Garlic Naan</h4>
+            <p>₹60</p>
+            <button onclick="addToCart('Garlic Naan', 60)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/TandooriRoti.jpg" alt="Tandoori Roti">
+            <h4>Tandoori Roti</h4>
+            <p>₹40</p>
+            <button onclick="addToCart('Tandoori Roti', 40)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/JeeraRice.jpg" alt="Jeera Rice">
+            <h4>Jeera Rice</h4>
+            <p>₹100</p>
+            <button onclick="addToCart('Jeera Rice', 100)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/MashedPotato.jpg" alt="Mashed Potatoes">
+            <h4>Mashed Potatoes</h4>
+            <p>₹80</p>
+            <button onclick="addToCart('Mashed Potatoes', 80)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Desserts -->
+<div class="menu-category">
+    <h3>🍰 Desserts</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/ChocolateLavaCake.jpg" alt="Chocolate Lava Cake">
+            <h4>Chocolate Lava Cake</h4>
+            <p>₹150</p>
+            <button onclick="addToCart('Chocolate Lava Cake', 150)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ClassicTiramisu.jpg" alt="Tiramisu">
+            <h4>Classic Tiramisu</h4>
+            <p>₹200</p>
+            <button onclick="addToCart('Classic Tiramisu', 200)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/GulabJamun.jpg" alt="Gulab Jamun">
+            <h4>Gulab Jamun with Ice Cream</h4>
+            <p>₹120</p>
+            <button onclick="addToCart('Gulab Jamun with Ice Cream', 120)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Cheesecake.jpg" alt="Cheesecake">
+            <h4>Cheesecake (Blueberry / Chocolate)</h4>
+            <p>₹180</p>
+            <button onclick="addToCart('Cheesecake (Blueberry / Chocolate)', 180)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Beverages -->
+<div class="menu-category">
+    <h3>🍹 Beverages</h3>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <img src="images/LimeSoda.jpg" alt="Lime Soda">
+            <h4>Fresh Lime Soda</h4>
+            <p>₹50</p>
+            <button onclick="addToCart('Fresh Lime Soda', 50)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ColdCoffee.jpg" alt="Cold Coffee">
+            <h4>Cold Coffee</h4>
+            <p>₹80</p>
+            <button onclick="addToCart('Cold Coffee', 80)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Mojito.jpg" alt="Mojito">
+            <h4>Mojito (Mint / Strawberry)</h4>
+            <p>₹100</p>
+            <button onclick="addToCart('Mojito (Mint / Strawberry)', 100)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/FreshJuices.jpg" alt="Fresh Juice">
+            <h4>Fresh Juices</h4>
+            <p>₹60</p>
+            <button onclick="addToCart('Fresh Juices', 60)">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="images/MocktailSpecials.jpg" alt="Mocktail">
+            <h4>Mocktail Specials</h4>
+            <p>₹120</p>
+            <button onclick="addToCart('Mocktail Specials', 120)">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Veloura is a modern fine-dining restaurant in Udupi offering a fusion of global cuisines 
+            with a luxurious ambience. Perfect for celebrations, date nights, and memorable experiences.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>📍 Udupi, Karnataka</p>
+        <p>📞 +91 98765 43210</p>
+        <p>🕒 12 PM – 11 PM</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
