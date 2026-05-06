@@ -1,87 +1,64 @@
+```css
 body {
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-background: #0b0b0b;
-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
 }
 
-/* HEADER */
+/* Navbar */
 header {
-position: fixed;
-width: 100%;
-padding: 20px;
-text-align: center;
-background: rgba(0,0,0,0.5);
-backdrop-filter: blur(10px);
-z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
 }
 
-/* PANELS */
-.panel {
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 50px;
+header h1 {
+    color: gold;
 }
 
-/* HERO */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero */
 .hero {
-background: url("https://picsum.photos/1600/900") center/cover;
-font-size: 2rem;
-text-align: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #000, #222);
 }
 
-/* IMAGE SECTIONS */
-.image-section {
-display: flex;
-justify-content: space-between;
-align-items: center;
+.hero h2 {
+    font-size: 40px;
 }
 
-.image-section .text {
-width: 40%;
+.hero button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
 }
 
-.image-section .image img {
-width: 400px;
-border-radius: 10px;
+/* Menu */
+.menu {
+    padding: 50px;
 }
 
-/* REVERSE */
-.reverse {
-flex-direction: row-reverse;
+.menu-category {
+    margin-bottom: 30px;
 }
 
-/* FULL IMAGE */
-.full-image {
-background: url("https://picsum.photos/1600/901") center/cover;
-font-size: 2rem;
-text-align: center;
+.menu h2 {
+    text-align: center;
+    color: gold;
 }
 
-/* CONTACT */
-.contact {
-flex-direction: column;
+/* Sections */
+.about, .contact {
+    padding: 50px;
+    background: #111;
 }
-
-form {
-display: flex;
-flex-direction: column;
-width: 300px;
-}
-
-input, textarea {
-margin: 10px 0;
-padding: 10px;
-border-radius: 5px;
-border: none;
-}
-
-/* BUTTON */
-button {
-background: linear-gradient(45deg, #d4af37, #f5e6a3);
-border: none;
-padding: 10px;
-cursor: pointer;
-}
+```
